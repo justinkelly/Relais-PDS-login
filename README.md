@@ -4,7 +4,7 @@ Allows Relais to use ExLibris PDS (Primo login system) to authenticate users and
 * This assumes NCIP has been setup between Relais and ExLibris Alma
 * That you have access to the Alma API - you need to setup an API key with access to production user details - read-only
 
-This is a fork of the great work done by [Steve Thomas](https://github.com/spotrick) of [The University of Adelaide Library](http://www.adelaide.edu.au/library/) and Rachelle Anne Orodio-Williams of [Monash University Library](http://www.monash.edu/library) for use at [Swinburne University Library](https://www.swinburne.edu.au/library)
+This is a fork of the great work done by [Steve Thomas](https://github.com/spotrick) of [The University of Adelaide Library](http://www.adelaide.edu.au/library/) and Rachelle Anne Orodio of [Monash University Library](http://www.monash.edu/library) for use at [Swinburne University Library](https://www.swinburne.edu.au/library)
 
 * https://github.com/spotrick/Relais-via-PDS
 * https://github.com/spotrick/PDS.pm
