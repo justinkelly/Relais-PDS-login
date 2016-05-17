@@ -1,5 +1,5 @@
 # Relais-PDS-login
-Allows Relais to use ExLibris PDS (Primo login system) to authenticate users and use ExLibris Alma to manage user/group authorisation.
+Allows Relais to use ExLibris PDS (Primo login system) to authenticate users and use ExLibris Alma for user/group authorisation.
 
 * This assumes NCIP has been setup between Relais and ExLibris Alma
 * That you have access to the Alma API - you need to setup an API key with access to production user details - read-only
@@ -18,7 +18,7 @@ This is a fork of the great work done by [Steve Thomas](https://github.com/spotr
 
 # Setup
 
-Copy the fiels `PDS.pm` and `illrequest.pl` onto a webserver that can run perl scripts.
+Copy the files `PDS.pm` and `illrequest.pl` onto a webserver that can run perl scripts.
 
 ## illrequest.pl
 
