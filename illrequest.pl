@@ -48,7 +48,7 @@ if ( my $id = $pds->userid )
 	##81 Psuedo patron/Library use
 	##82 Psuedo patrons - Holds
 
-       ##if ($id) {
+       ## List which Alma user groups are allowed to borrow via ILL/Relais		
        my @almagroups = ("03","11","12","13","34","81","82");
        if (grep { $_ eq $group } @almagroups) {
 
