@@ -4,7 +4,7 @@ Allows Relais to use ExLibris PDS (Primo login system) to authenticate users and
 * This assumes NCIP has been setup between Relais and ExLibris Alma
 * That you have access to the Alma API - you need to setup an API key with access to prodcution user details - read-only
 
-This is a fork of the great work done by [Steve Thomas](https://github.com/spotrick) of [The University of Adelaide Library](http://www.adelaide.edu.au/library/) and Rachell Anne Orodio-Willioms of [Monash University Library](http://www.monash.edu/library)                 
+This is a fork of the great work done by [Steve Thomas](https://github.com/spotrick) of [The University of Adelaide Library](http://www.adelaide.edu.au/library/) and Rachell Anne Orodio-Williams of [Monash University Library](http://www.monash.edu/library)                 
 
 * https://github.com/spotrick/Relais-via-PDS
 * https://github.com/spotrick/PDS.pm
@@ -45,13 +45,12 @@ Update `$relais` with your Relais patron login url
 # Relais url
 my $relais = '<YOUR RELAIS URL>';
 ## example format 
-### Swinburne $relais = 'https://h7.relais-host.com/vswt/loginpRFT.jsp?';
-### Swinburne $relais = 'https://h7.relais-host.com/vswt/loginp.jsp';
+### Swinburne $relais = 'https://h7.relais-host.com/<YOUR RELAIS CODE>/loginpRFT.jsp?';
+### Swinburne $relais = 'https://h7.relais-host.com/<YOUR RELAIS CODE>/loginp.jsp';
 ### Monash $relais = 'https://<YOUR RELAIS URL HERE>/user/login.html?group=patron';
 ```
 
-Update `@almagroups` with the code numbers for the user groups that are allowed to use Relais 
-
+Update `@almagroups` with the code numbers for the user groups that are allowed to palce inter-library loan requests in Relais 
 ```
 ## List which Alma user groups are allowed to borrow via ILL/Relais		
 my @almagroups = ("03","11","12","13","34","81","82");
@@ -69,3 +68,14 @@ my $institute = "<YOUR PRIMO INSTITUTE>";
 ```
 
 # Alma API key
+
+To access the users group details from ExLibris Alma and Alma API key is required.  
+An API key can be created in the ExLibris Developers Network, refer below links, please make sure that the key is for your production server and is read-only
+
+ExLibris Alma API - getting started documentation
+
+* https://developers.exlibrisgroup.com/alma/apis
+
+API details
+
+* https://developers.exlibrisgroup.com/alma/apis/users/GET/gwPcGly021r0XQMGAttqcPPFoLNxBoEZSZhrICr+9So=/0aa8d36f-53d6-48ff-8996-485b90b103e4
